@@ -24,7 +24,16 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
-    pass
+    # start looping with len(arr) and grab both current and neighbor values to compare
+    # condition to compare neighbors and swap
+    for i in range(len(arr) - 1):
+        current_index = i
+        neighbor_index = current_index + 1
+        if arr[current_index] > arr[neighbor_index]:
+            tempValue = arr[current_index]
+            arr[current_index] = arr[neighbor_index]
+            arr[neighbor_index] = tempValue
+
     return arr
 
 
